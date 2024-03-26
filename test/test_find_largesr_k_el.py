@@ -1,5 +1,5 @@
 import unittest
-from lab1l2 import quick_sort
+from find_largesr_k_el import quick_sort
 
 
 class TestQuickSort(unittest.TestCase):
