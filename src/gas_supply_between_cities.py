@@ -1,6 +1,6 @@
 def dfs(graph, start, visited):
-    # if visited is None:
-    #     visited = set()
+    if visited is None:
+        visited = set()
     visited.add(start)
     for neighbor in graph[start]:
         if neighbor not in visited:
