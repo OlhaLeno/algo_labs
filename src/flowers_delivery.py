@@ -73,18 +73,18 @@ def ford_fulkerson(graph, source, sink) -> int:
 
     while dfs(graph, [], source, sink):
         path_flow = float("Inf")
-        s = sink
-        while s != source:
-            path_flow = min(path_flow, graph[parent[s]][s])
-            s = parent[s]
+        current_node = sink
+        while current_node != source:
+            path_flow = min(path_flow, graph[parent[current_node]][current_node])
+            current_node = parent[current_node]
         max_flow += path_flow
 
-        v = sink
-        while v != source:
-            u = parent[v]
-            graph[u][v] -= path_flow
-            graph[v][u] += path_flow
-            v = parent[v]
+        node = sink
+        while node != source:
+            prev_node = parent[node]
+            graph[prev_node][node] -= path_flow
+            graph[node][prev_node] += path_flow
+            node = parent[node]
 
     return max_flow
 
