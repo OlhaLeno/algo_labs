@@ -21,8 +21,8 @@ def len_of_max_chain(readfile: str, writefile: str):
     dp = {word: 1 for word in words_list}
 
     for word in words_list:
-        for i in range(len(word)):
-            previous = word[:i] + word[i + 1:]
+        for symbol in range(len(word)):
+            previous = word[:symbol] + word[symbol + 1:]
             if previous in dp:
                 dp[word] = max(dp[word], dp[previous] + 1)
                 max_chain_len = max(max_chain_len, dp[word])
