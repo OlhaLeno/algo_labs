@@ -1,6 +1,6 @@
 import unittest
 from collections import defaultdict
-from flowers_delivery import max_flow, dfs
+from src.flowers_delivery import max_flow, dfs
 
 
 class TestOneMoreTime(unittest.TestCase):

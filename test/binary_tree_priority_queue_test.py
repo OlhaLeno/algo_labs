@@ -1,5 +1,5 @@
 import unittest
-from binary_tree_priority_queue import PriorityQueue
+from src.binary_tree_priority_queue import PriorityQueue
 
 
 class TestPriorityQueue(unittest.TestCase):

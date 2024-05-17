@@ -1,5 +1,5 @@
 import unittest
-from is_have_graph_cycle import have_cycle
+from src.is_have_graph_cycle import have_cycle
 
 
 class TestGraphCycle(unittest.TestCase):

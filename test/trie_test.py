@@ -1,5 +1,5 @@
 import unittest
-from trie import Trie
+from src.trie import Trie
 
 
 class TrieTest(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from gas_supply_between_cities import gas_supply
+from src.gas_supply_between_cities import gas_supply
 
 
 class GasSupply(unittest.TestCase):

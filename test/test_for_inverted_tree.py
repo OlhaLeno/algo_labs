@@ -1,5 +1,5 @@
 import unittest
-from lab3v3l2 import invert_binary_tree, BinaryTree
+from src.invert_binary_tree import invert_binary_tree, BinaryTree
 
 
 class InvertationCase(unittest.TestCase):
