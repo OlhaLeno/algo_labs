@@ -1,5 +1,5 @@
 import unittest
-from linguistic_game import len_of_max_chain
+from src.linguistic_game import len_of_max_chain
 
 
 class TestWordChain(unittest.TestCase):
